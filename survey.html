@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Institute of Data Survey</title>
+        <h1>Institute of Data Survey Form</h1>
+        <link rel="stylesheet" href="styles.css">
+
+        <SCRIPT LANGUAGE="JavaScript">
+            function testResults (form) {
+                var TestVar = form.name.value;
+                alert ("You typed: " + TestVar);
+            }
+        </SCRIPT>
+    </head>
+
+    <body>
+        <div id="div1" class="card">
+        <form name="myform">
+            <h4>Name:</h4>
+            <input required type="text" id="name" name="name" placeholder="Enter Your Name Here"><br><br>
+    
+            <h4>Email:</h4>
+            <input required type="text" id="email" name="email" placeholder="Enter Your Email Address" outline: none;><br><br>
+   
+            <h4>Age:</h4>
+            <input type="text" id="age" name="age" placeholder="Enter Your Age"><br><br>
+
+            <h4>Which option best describes you?</h4>
+            <select required>
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="value1" style="font-weight:lighter">Student</option>
+                <option value="value2">Teacher</option>
+                <option value="value3">Other</option>
+            </select><br><br>
+  
+            <h4>Would you recommend Institute of Data to a friend?</h4>
+            <input type="radio" id="recommendYes" name="recommend" >
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="recommendNo" name="recommend" >
+            <label for="no">No</label><br>
+            <input type="radio" id="recommendMaybe" name="recommend" checked>
+            <label for="maybe">Maybe</label><br><br>
+
+    <h4>Languages and Frameworks Known:</h4>
+        <input type="checkbox" id="C" name="C" value="C">
+        <label for="C">C</label><br>
+        <input type="checkbox" id="C++" name="C++" value="C++">
+        <label for="C++">C++</label><br>
+        <input type="checkbox" id="C#" name="C#" value="C#">
+        <label for="C#">C#</label><br>
+        <input type="checkbox" id="Java" name="Java" value="Java">
+        <label for="Java">Java</label><br>
+        <input type="checkbox" id="Python" name="Python" value="Python">
+        <label for="Python">Python</label><br>
+        <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+        <label for="Javascript">Javascript</label><br>
+        <input type="checkbox" id="React" name="React" value="React">
+        <label for="React">React</label><br>
+        <input type="checkbox" id="Angular" name="Angular" value="Angular">
+        <label for="Angular">Angular</label><br>
+        <input type="checkbox" id="Django" name="Django" value="Django">
+        <label for="Django">Django</label><br>
+        <input type="checkbox" id="Spring" name="Spring" value="Spring">
+        <label for="Spring">Spring</label><br>
+
+    <h4>Any comments or suggestions?</h4>
+        <textarea rows="6" cols="50" name="comments" id="comments"></textarea>
+    <br>
+    <br>
+    <FORM NAME="myform" ACTION="" METHOD="GET"><h4>Enter something in the box:</h4> <BR>
+        <INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+    <input type="submit" value="Submit" required>
+</div>
+</form>
+
+    </body>
+    
+</html>
